@@ -1,0 +1,21 @@
+package AG;
+import java.util.Scanner;
+public class Q46 {
+    public static void main(String[]args){
+        Scanner sc= new Scanner(System.in);
+        int n =sc.nextInt();
+        int ori=n;
+        int tem=0;
+        int len =(int)Math.log10(n)+1;
+        for(int i =1;i<=len;i++){
+            int digit=n%10;
+            tem=tem*10+digit;
+            n/=10;
+        }
+        if(tem==ori){
+            System.out.println("Pal"+tem);
+        }else{
+            System.out.println("Not a Pali"+tem);
+        }
+    }
+}
