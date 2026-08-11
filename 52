@@ -1,0 +1,19 @@
+package AG;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Q52_2ndmax {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int []arr={1,2,5,7,7,7,8,8,8,1};
+        Arrays.sort(arr);
+        int max=arr[arr.length-1];
+        int smax = -1;
+        for(int  i =arr.length-2;i>=0;i--){
+            if(arr[i]!=max){
+                smax=arr[i];
+                break;
+            }
+        }
+        System.out.println(smax);
+    }
+}
