@@ -1,0 +1,13 @@
+package AG;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Q54_swap {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int []arr = {1,2,3,4,5};
+        int swap=arr[0];
+        arr[0]=arr[4];
+        arr[4]=swap;
+        System.out.println(Arrays.toString(arr));
+    }
+}
