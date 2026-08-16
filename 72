@@ -1,0 +1,18 @@
+package AG;
+import java.util.Scanner;
+public class Q16_rev {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        int revnum=0;
+        while(n!=0){
+            int lastdigit = n%10;
+            if(revnum >Integer.MAX_VALUE/10||revnum<Integer.MIN_VALUE/10){
+                System.out.println("0");
+            }
+            revnum=(revnum*10)+lastdigit;
+            n/=10;
+        }
+        System.out.println(revnum);
+    }
+}
