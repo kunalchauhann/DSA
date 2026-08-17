@@ -1,0 +1,17 @@
+package AG;
+import java.util.Scanner;
+public class Q68_freq_string {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        String s  = "assdhfghferughfsdkjfhj";
+        int []arr = new int[127];
+        for(char ch : s.toCharArray()){
+            arr[ch]++;
+        }
+        for(int i=0;i<127;i++){
+            if(arr[i]!=0){
+                System.out.println((char)i+" : "+arr[i]);
+            }
+        }
+    }
+}
