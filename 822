@@ -1,0 +1,9 @@
+package AG;
+
+public class Q82_add_two_String {
+    public static void main(String[]args){
+        String str ="abcd";
+        String c =str.concat("efgh");//String is immutable so we have to make a new String(c).
+        System.out.println(c);
+    }
+}
