@@ -1,0 +1,17 @@
+package AG;
+import java.util.Arrays;
+public class Q81_linear_search_string {
+    public static void main(String[]args){
+        String atr = "gfiuegartefhsaieyfgjfhaefyj";
+        char r = 'j';
+        int index =-1;
+        for(int i=0;i<atr.length();i++){
+            char ch = atr.charAt(i);
+            if(ch==r){
+                index=i;
+                break;
+            }
+        }
+        System.out.println(index);
+    }
+}
