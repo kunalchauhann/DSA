@@ -1,0 +1,16 @@
+package AG;
+import java.util.Scanner;
+
+public class Q80_unique_element_string {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        String str = "asiydge8ghwejfbasigf";
+        String r="";
+        for(char ch: str.toCharArray()){
+            if(r.indexOf(ch)==-1){
+                r=r+ch;
+            }
+        }
+        System.out.println(r);
+    }
+}
