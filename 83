@@ -1,0 +1,10 @@
+package AG;
+import java.util.Scanner;
+public class Q83_remove_blank_space {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        String str = "    abcd   ";
+        str=str.trim();
+        System.out.println(str);
+    }
+}
