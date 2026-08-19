@@ -1,0 +1,12 @@
+package AG;
+
+public class Q84_index_lastindex {
+    public static void main(String[]args){
+        String str = "abcdefgh";
+        int index = str.indexOf("def");
+        int ind = str.lastIndexOf("f");
+        System.out.println(index);
+        System.out.println(ind);
+
+    }
+}
