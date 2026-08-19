@@ -1,0 +1,11 @@
+package AG;
+
+public class Q85 {
+    public static void main(String[]args){
+        String str ="abcdefgh";
+        String x ="abcd";
+        String y = "dabc";
+        String s = x+y;//abcddabc
+
+    }
+}
