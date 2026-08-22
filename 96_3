@@ -1,0 +1,25 @@
+package AG;
+
+public class Q92 {
+    public static void main(String[]args){
+        int x=521;
+            boolean ispalindrome;
+            int y =x;
+            int temp=0;
+            if(x<0){
+                System.out.println("false hello");
+                return;
+            }
+            while(x>0){
+                int digit=x%10;
+                temp=temp*10+digit;
+                x=x/10;
+            }
+            if(y==temp){
+                ispalindrome=true;
+            }else{
+                ispalindrome=false;
+            }
+        System.out.println(ispalindrome);
+        }
+    }
