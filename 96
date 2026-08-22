@@ -1,0 +1,18 @@
+package AG;
+import java.util.Scanner;
+public class Q89 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int []nums=new int[6];
+        for(int i=0;i<6;i++){
+            nums[i]=sc.nextInt();
+        }
+        int[]ans=new int[nums.length];
+        for(int i=0;i<nums.length;i++){
+            ans[i]=nums[nums[i]];
+        }
+        for(int i=0;i<6;i++){
+            System.out.print(ans[i]+" ");
+        }
+    }
+}
