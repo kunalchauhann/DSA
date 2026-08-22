@@ -1,0 +1,24 @@
+package AG;
+import java.util.Scanner;
+public class Q91 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        char [] s = new char[5];
+        for(int f=0;f<s.length;f++){
+            s[f]=sc.next().charAt(0);
+        }
+        int n=s.length;
+        int i=0;
+        int j=n-1;
+        while(i<j){
+            char temp =s[i];
+            s[i]=s[j];
+            s[j]=temp;
+            i++;
+            j--;
+        }
+        for(int k=0;k<n;k++){
+            System.out.print(s[k]+" ");
+        }
+    }
+}
