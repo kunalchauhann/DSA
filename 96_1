@@ -1,0 +1,10 @@
+package AG;
+
+public class Q90 {
+    public static void main(String[]args){
+        String str = "programming";
+        int[]ar = new int[128];
+        for(char ch: str.toCharArray())ar[ch]++;
+        System.out.println(ar['r']);
+    }
+}
