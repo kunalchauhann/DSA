@@ -1,0 +1,49 @@
+package AG;
+import java.util.Scanner;
+public class Q2 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Destination of Shipment: ");
+        String destination = sc.nextLine();
+        System.out.println("Enter the amount of order: ");
+        double order=sc.nextDouble();
+        System.out.println("Enter the weight of the package: ");
+        int weight = sc.nextInt();
+        System.out.println("Is it Express or not: ");
+        boolean isexpress=sc.nextBoolean();
+        double totalorder=0;
+        if(destination.equalsIgnoreCase("Domestic")){
+            if(order>=100){
+                System.out.println("No base charge");
+                if(isexpress){
+                    totalorder=totalorder+8;
+                }
+            }else if(order<100){
+                if(weight<=2){
+                    totalorder+=5;
+                    if(isexpress){
+                        totalorder=totalorder+8;
+                    }
+                }else if(weight>2){
+                    totalorder=5+((weight-2)*2);
+                    if(isexpress){
+                        totalorder=totalorder+8;
+                    }
+                }
+            }
+        }else if(destination.equalsIgnoreCase("International")){
+            if(weight<=5){
+                totalorder+=25;
+                if(isexpress){
+                    totalorder+=20;
+                }
+            }else if(weight>5){
+                totalorder=25+((weight-5)*5);
+                if(isexpress){
+                    totalorder+=20;
+                }
+            }
+        }
+        System.out.println("Shipping charge $"+totalorder);
+    }
+}
